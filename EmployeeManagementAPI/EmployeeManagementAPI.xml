@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmployeeManagementAPI</name>
+    </assembly>
+    <members>
+        <member name="M:EmployeeManagementAPI.Controllers.EmployeeController.GetEmployees(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Retrieves all employees with optional sorting and search functionality.
+            </summary>
+            <param name="sortBy">Sort by 'surname' or 'hireDate'.</param>
+            <param name="search">Search by employee's first or last name.</param>
+            <param name="skillId">Search by employee's skill by skill_id</param>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.EmployeeController.GetEmployee(System.Int32)">
+            <summary>
+            Retrieves a specific employee by ID along with their skills.
+            </summary>
+            <param name="id">Employee ID.</param>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.EmployeeController.CreateEmployee(EmployeeManagementAPI.DTOs.EmployeeCreateDto)">
+            <summary>
+            Creates a new employee.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.EmployeeController.UpdateEmployee(System.Int32,EmployeeManagementAPI.DTOs.EmployeeUpdateDto)">
+            <summary>
+            Updates an existing employee.
+            </summary>
+            <param name="id">Employee ID.</param>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.EmployeeController.DeleteEmployee(System.Int32)">
+            <summary>
+            Deletes an employee by ID.
+            </summary>
+            <param name="id">Employee ID.</param>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.EmployeeController.ImportEmployeesWithSkills(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Imports employees from a CSV file.
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.SkillsController.GetSkills">
+            <summary>
+            Retrieves all skills with employee count.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.SkillsController.GetSkill(System.Int32)">
+            <summary>
+            Retrieves a specific skill by ID, including associated employees.
+            </summary>
+            <param name="id">Skill ID.</param>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.SkillsController.CreateSkill(EmployeeManagementAPI.DTOs.SkillDTO)">
+            <summary>
+            Creates a new skill.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.SkillsController.UpdateSkill(System.Int32,EmployeeManagementAPI.DTOs.SkillDTO)">
+            <summary>
+            Updates an existing skill.
+            </summary>
+            <param name="id">Skill ID.</param>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.SkillsController.DeleteSkill(System.Int32)">
+            <summary>
+            Deletes a skill by ID.
+            </summary>
+            <param name="id">Skill ID.</param>
+        </member>
+        <member name="M:EmployeeManagementAPI.Controllers.SkillsController.ExportSkillsToCsv">
+            <summary>
+            Exports all skills to a CSV file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EmployeeManagementAPI.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:EmployeeManagementAPI.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EmployeeManagementAPI.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EmployeeManagementAPI.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EmployeeManagementAPI.Migrations.SeedData">
+            <inheritdoc />
+        </member>
+        <member name="M:EmployeeManagementAPI.Migrations.SeedData.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EmployeeManagementAPI.Migrations.SeedData.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EmployeeManagementAPI.Migrations.SeedData.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
